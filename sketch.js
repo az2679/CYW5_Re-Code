@@ -36,7 +36,7 @@ function draw() {
   
   strokeWeight(5)
   noFill()
-  stroke(200, 200)
+  stroke(230, 200, 200, 200)
   point(x1*10, y1*10)
   point(-x1*10, y1*10)
   point(x1*10, -y1*10)
