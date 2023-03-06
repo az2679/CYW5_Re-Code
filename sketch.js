@@ -45,7 +45,7 @@ function draw() {
   
   strokeWeight(2);
   stroke(200, 200);
-  line(x1, y1, x2, y2);
+  line(x1, y1, x2*0.005, y2*0.005);
   t += 0.5;
 }
 
