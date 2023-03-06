@@ -10,6 +10,7 @@ let t = 0;
 function setup() {
   createCanvas(windowWidth, windowHeight);
 
+  // colorMode(HSB)
 
 }
 
@@ -21,18 +22,29 @@ function draw() {
   let amplitude = width / 3;
 
   let x1 = sin(t / 10) * amplitude*0.1;
-  let y1 = cos(t / 10) * amplitude*0.1;
+  let y1 = cos(t / 20) * amplitude*0.1;
   
   let x2 = sin(t / 20) * amplitude * 50;
   let y2 = cos(t / 10) * amplitude * 20;
   
   strokeWeight(0.5);
   noFill()
-  stroke(200,100)
-  ellipse(x1,y1, 15)
+  stroke(200, 150)
+  // ellipse(x1, y1, 15)
+
+
+  rotate(t*0.5)
+  // for (let i=-x1; i<x1; i++){
+  //   for(let j=-y1; j<y1; j++){
+  //     point(i, j)
+  //   }
+  // }
+
+  // rect(x1, y1, x2, y2)
+  
   
   strokeWeight(2);
-  stroke(255);
+  stroke(200, 200);
   line(x1, y1, x2, y2);
   t += 0.5;
 }
