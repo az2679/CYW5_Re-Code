@@ -15,7 +15,7 @@ function setup() {
 }
 
 function draw() {
-  background(0, 20);
+  background(255, 240, 220, 20);
   
   translate(width / 2, height / 2);
 
@@ -73,7 +73,7 @@ console.log (y1)
   
   
   strokeWeight(2);
-  stroke(200, 200);
+  stroke(255, 200, 0, 200);
   line(x1, y1, x2*0.005, y2*0.005);
   t += 0.4;
 }
