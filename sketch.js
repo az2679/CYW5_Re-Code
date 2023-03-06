@@ -9,13 +9,10 @@ let t = 0;
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
-
-  // colorMode(HSB)
-
 }
 
 function draw() {
-  background(255, 240, 220, 20);
+  background(255, 240, 220, 40);
   
   translate(width / 2, height / 2);
 
@@ -26,17 +23,10 @@ function draw() {
   
   let x2 = sin(t / 20) * amplitude * 50;
   let y2 = cos(t / 10) * amplitude * 20;
-  
-  // if (y1 < height/4 || y1 > (height/4) *3 ){
-  //   strokeWeight(5);
-  // } else {
-  //   strokeWeight(0.5);
-  // }
 
-  
   strokeWeight(5)
   noFill()
-  stroke(230, 200, 200, 200)
+  stroke(255, 150, 150, 200)
   point(x1*10, y1*10)
   point(-x1*10, y1*10)
   point(x1*10, -y1*10)
@@ -66,11 +56,7 @@ function draw() {
   point(y2*0.01, x2*0.01)
   point(-y2*0.01, -x2*0.01)
 
-
-
-console.log (y1)
   rotate(t*0.5)
-  
   
   strokeWeight(2);
   stroke(255, 200, 0, 200);
